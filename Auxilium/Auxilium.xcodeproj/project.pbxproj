@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37A84D60DD52EFA599030C5D /* Pods_AuxiliumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC46879FCF70848A15A281F9 /* Pods_AuxiliumTests.framework */; };
+		67122D28CBEF2CB49F7F2C52 /* Pods_AuxiliumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB69BA073133B612B8E5C502 /* Pods_AuxiliumUITests.framework */; };
 		AF3376951E467E9500D99027 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3376941E467E9500D99027 /* AppDelegate.swift */; };
 		AF3376971E467E9500D99027 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3376961E467E9500D99027 /* ViewController.swift */; };
 		AF33769A1E467E9500D99027 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF3376981E467E9500D99027 /* Main.storyboard */; };
@@ -14,6 +16,8 @@
 		AF33769F1E467E9500D99027 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF33769D1E467E9500D99027 /* LaunchScreen.storyboard */; };
 		AF3376AA1E467E9500D99027 /* AuxiliumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3376A91E467E9500D99027 /* AuxiliumTests.swift */; };
 		AF3376B51E467E9500D99027 /* AuxiliumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3376B41E467E9500D99027 /* AuxiliumUITests.swift */; };
+		AF3376C31E46849100D99027 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF3376C21E46849100D99027 /* GoogleService-Info.plist */; };
+		BC17248645D086D6E8ECC46C /* Pods_Auxilium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF6C9040D9B61D030A1BAB3 /* Pods_Auxilium.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CF6C9040D9B61D030A1BAB3 /* Pods_Auxilium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Auxilium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		134283224CBFF1EFBD4D921F /* Pods-AuxiliumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuxiliumTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AuxiliumTests/Pods-AuxiliumTests.release.xcconfig"; sourceTree = "<group>"; };
+		1725A781ED7017CEB460243E /* Pods-AuxiliumUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuxiliumUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AuxiliumUITests/Pods-AuxiliumUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4A0EBB5A900AA5C71DBBCB79 /* Pods-Auxilium.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auxilium.release.xcconfig"; path = "Pods/Target Support Files/Pods-Auxilium/Pods-Auxilium.release.xcconfig"; sourceTree = "<group>"; };
+		83B9C6605A321177CD2A4B2C /* Pods-AuxiliumUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuxiliumUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AuxiliumUITests/Pods-AuxiliumUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E20C2FB5986752AB35CFD6C /* Pods-AuxiliumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuxiliumTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AuxiliumTests/Pods-AuxiliumTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9CCE26D1D0DCB78060B42346 /* Pods-Auxilium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auxilium.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Auxilium/Pods-Auxilium.debug.xcconfig"; sourceTree = "<group>"; };
 		AF3376911E467E9500D99027 /* Auxilium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Auxilium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF3376941E467E9500D99027 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF3376961E467E9500D99027 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +58,9 @@
 		AF3376B01E467E9500D99027 /* AuxiliumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuxiliumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF3376B41E467E9500D99027 /* AuxiliumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxiliumUITests.swift; sourceTree = "<group>"; };
 		AF3376B61E467E9500D99027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF3376C21E46849100D99027 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BB69BA073133B612B8E5C502 /* Pods_AuxiliumUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuxiliumUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC46879FCF70848A15A281F9 /* Pods_AuxiliumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuxiliumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC17248645D086D6E8ECC46C /* Pods_Auxilium.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37A84D60DD52EFA599030C5D /* Pods_AuxiliumTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +84,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67122D28CBEF2CB49F7F2C52 /* Pods_AuxiliumUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8CC16E6D48610EEF5B4DD536 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CF6C9040D9B61D030A1BAB3 /* Pods_Auxilium.framework */,
+				CC46879FCF70848A15A281F9 /* Pods_AuxiliumTests.framework */,
+				BB69BA073133B612B8E5C502 /* Pods_AuxiliumUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AF3376881E467E9400D99027 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +108,8 @@
 				AF3376A81E467E9500D99027 /* AuxiliumTests */,
 				AF3376B31E467E9500D99027 /* AuxiliumUITests */,
 				AF3376921E467E9500D99027 /* Products */,
+				B9969F2FB815391C0E956E14 /* Pods */,
+				8CC16E6D48610EEF5B4DD536 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +132,7 @@
 				AF33769B1E467E9500D99027 /* Assets.xcassets */,
 				AF33769D1E467E9500D99027 /* LaunchScreen.storyboard */,
 				AF3376A01E467E9500D99027 /* Info.plist */,
+				AF3376C21E46849100D99027 /* GoogleService-Info.plist */,
 			);
 			path = Auxilium;
 			sourceTree = "<group>";
@@ -125,6 +155,19 @@
 			path = AuxiliumUITests;
 			sourceTree = "<group>";
 		};
+		B9969F2FB815391C0E956E14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CCE26D1D0DCB78060B42346 /* Pods-Auxilium.debug.xcconfig */,
+				4A0EBB5A900AA5C71DBBCB79 /* Pods-Auxilium.release.xcconfig */,
+				8E20C2FB5986752AB35CFD6C /* Pods-AuxiliumTests.debug.xcconfig */,
+				134283224CBFF1EFBD4D921F /* Pods-AuxiliumTests.release.xcconfig */,
+				83B9C6605A321177CD2A4B2C /* Pods-AuxiliumUITests.debug.xcconfig */,
+				1725A781ED7017CEB460243E /* Pods-AuxiliumUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF3376B91E467E9500D99027 /* Build configuration list for PBXNativeTarget "Auxilium" */;
 			buildPhases = (
+				F36F3BC1E7A8D8ED475BCE63 /* [CP] Check Pods Manifest.lock */,
 				AF33768D1E467E9400D99027 /* Sources */,
 				AF33768E1E467E9400D99027 /* Frameworks */,
 				AF33768F1E467E9400D99027 /* Resources */,
+				9A5D4F05AD622AC796C1A965 /* [CP] Embed Pods Frameworks */,
+				633817B000510B145138CA54 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF3376BC1E467E9500D99027 /* Build configuration list for PBXNativeTarget "AuxiliumTests" */;
 			buildPhases = (
+				BB17F88B66805892016ECDD5 /* [CP] Check Pods Manifest.lock */,
 				AF3376A11E467E9500D99027 /* Sources */,
 				AF3376A21E467E9500D99027 /* Frameworks */,
 				AF3376A31E467E9500D99027 /* Resources */,
+				1B2324C74AFFEB4AE6E677DF /* [CP] Embed Pods Frameworks */,
+				1C66C3501AFF0D79B06A85C0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF3376BF1E467E9500D99027 /* Build configuration list for PBXNativeTarget "AuxiliumUITests" */;
 			buildPhases = (
+				7D72E9A6901863BB2B45B00C /* [CP] Check Pods Manifest.lock */,
 				AF3376AC1E467E9500D99027 /* Sources */,
 				AF3376AD1E467E9500D99027 /* Frameworks */,
 				AF3376AE1E467E9500D99027 /* Resources */,
+				D9BC99F4F118F6178092FBE0 /* [CP] Embed Pods Frameworks */,
+				6539B9501936F96EF2BDAC82 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF33769F1E467E9500D99027 /* LaunchScreen.storyboard in Resources */,
+				AF3376C31E46849100D99027 /* GoogleService-Info.plist in Resources */,
 				AF33769C1E467E9500D99027 /* Assets.xcassets in Resources */,
 				AF33769A1E467E9500D99027 /* Main.storyboard in Resources */,
 			);
@@ -256,6 +309,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B2324C74AFFEB4AE6E677DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuxiliumTests/Pods-AuxiliumTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C66C3501AFF0D79B06A85C0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuxiliumTests/Pods-AuxiliumTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		633817B000510B145138CA54 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Auxilium/Pods-Auxilium-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6539B9501936F96EF2BDAC82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuxiliumUITests/Pods-AuxiliumUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D72E9A6901863BB2B45B00C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9A5D4F05AD622AC796C1A965 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Auxilium/Pods-Auxilium-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB17F88B66805892016ECDD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D9BC99F4F118F6178092FBE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuxiliumUITests/Pods-AuxiliumUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F36F3BC1E7A8D8ED475BCE63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AF33768D1E467E9400D99027 /* Sources */ = {
@@ -411,6 +602,7 @@
 		};
 		AF3376BA1E467E9500D99027 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CCE26D1D0DCB78060B42346 /* Pods-Auxilium.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				DEVELOPMENT_TEAM = V43B8P7A9G;
@@ -424,6 +616,7 @@
 		};
 		AF3376BB1E467E9500D99027 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A0EBB5A900AA5C71DBBCB79 /* Pods-Auxilium.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				DEVELOPMENT_TEAM = V43B8P7A9G;
@@ -437,6 +630,7 @@
 		};
 		AF3376BD1E467E9500D99027 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E20C2FB5986752AB35CFD6C /* Pods-AuxiliumTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -452,6 +646,7 @@
 		};
 		AF3376BE1E467E9500D99027 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 134283224CBFF1EFBD4D921F /* Pods-AuxiliumTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -467,6 +662,7 @@
 		};
 		AF3376C01E467E9500D99027 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83B9C6605A321177CD2A4B2C /* Pods-AuxiliumUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = V43B8P7A9G;
@@ -481,6 +677,7 @@
 		};
 		AF3376C11E467E9500D99027 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1725A781ED7017CEB460243E /* Pods-AuxiliumUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = V43B8P7A9G;
