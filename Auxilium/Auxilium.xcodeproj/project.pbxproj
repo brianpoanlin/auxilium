@@ -10,13 +10,16 @@
 		37A84D60DD52EFA599030C5D /* Pods_AuxiliumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC46879FCF70848A15A281F9 /* Pods_AuxiliumTests.framework */; };
 		67122D28CBEF2CB49F7F2C52 /* Pods_AuxiliumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB69BA073133B612B8E5C502 /* Pods_AuxiliumUITests.framework */; };
 		AF3376951E467E9500D99027 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3376941E467E9500D99027 /* AppDelegate.swift */; };
-		AF3376971E467E9500D99027 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3376961E467E9500D99027 /* ViewController.swift */; };
 		AF33769A1E467E9500D99027 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF3376981E467E9500D99027 /* Main.storyboard */; };
 		AF33769C1E467E9500D99027 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF33769B1E467E9500D99027 /* Assets.xcassets */; };
 		AF33769F1E467E9500D99027 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF33769D1E467E9500D99027 /* LaunchScreen.storyboard */; };
 		AF3376AA1E467E9500D99027 /* AuxiliumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3376A91E467E9500D99027 /* AuxiliumTests.swift */; };
 		AF3376B51E467E9500D99027 /* AuxiliumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3376B41E467E9500D99027 /* AuxiliumUITests.swift */; };
 		AF3376C31E46849100D99027 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF3376C21E46849100D99027 /* GoogleService-Info.plist */; };
+		AF3376C51E46895800D99027 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3376C41E46895800D99027 /* SignInViewController.swift */; };
+		AF3376C71E46897900D99027 /* Aux_Blue_Bkg.png in Resources */ = {isa = PBXBuildFile; fileRef = AF3376C61E46897900D99027 /* Aux_Blue_Bkg.png */; };
+		AF3376CB1E4689F400D99027 /* Logo_White.png in Resources */ = {isa = PBXBuildFile; fileRef = AF3376CA1E4689F400D99027 /* Logo_White.png */; };
+		AF3376CD1E468EA600D99027 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3376CC1E468EA600D99027 /* MainViewController.swift */; };
 		BC17248645D086D6E8ECC46C /* Pods_Auxilium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF6C9040D9B61D030A1BAB3 /* Pods_Auxilium.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +50,6 @@
 		9CCE26D1D0DCB78060B42346 /* Pods-Auxilium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auxilium.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Auxilium/Pods-Auxilium.debug.xcconfig"; sourceTree = "<group>"; };
 		AF3376911E467E9500D99027 /* Auxilium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Auxilium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF3376941E467E9500D99027 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF3376961E467E9500D99027 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AF3376991E467E9500D99027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF33769B1E467E9500D99027 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF33769E1E467E9500D99027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +61,10 @@
 		AF3376B41E467E9500D99027 /* AuxiliumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxiliumUITests.swift; sourceTree = "<group>"; };
 		AF3376B61E467E9500D99027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF3376C21E46849100D99027 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AF3376C41E46895800D99027 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		AF3376C61E46897900D99027 /* Aux_Blue_Bkg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aux_Blue_Bkg.png; sourceTree = "<group>"; };
+		AF3376CA1E4689F400D99027 /* Logo_White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_White.png; sourceTree = "<group>"; };
+		AF3376CC1E468EA600D99027 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BB69BA073133B612B8E5C502 /* Pods_AuxiliumUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuxiliumUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC46879FCF70848A15A281F9 /* Pods_AuxiliumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuxiliumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -127,11 +133,14 @@
 			isa = PBXGroup;
 			children = (
 				AF3376941E467E9500D99027 /* AppDelegate.swift */,
-				AF3376961E467E9500D99027 /* ViewController.swift */,
 				AF3376981E467E9500D99027 /* Main.storyboard */,
+				AF3376CC1E468EA600D99027 /* MainViewController.swift */,
+				AF3376C41E46895800D99027 /* SignInViewController.swift */,
 				AF33769B1E467E9500D99027 /* Assets.xcassets */,
 				AF33769D1E467E9500D99027 /* LaunchScreen.storyboard */,
 				AF3376A01E467E9500D99027 /* Info.plist */,
+				AF3376C61E46897900D99027 /* Aux_Blue_Bkg.png */,
+				AF3376CA1E4689F400D99027 /* Logo_White.png */,
 				AF3376C21E46849100D99027 /* GoogleService-Info.plist */,
 			);
 			path = Auxilium;
@@ -287,9 +296,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF3376CB1E4689F400D99027 /* Logo_White.png in Resources */,
 				AF33769F1E467E9500D99027 /* LaunchScreen.storyboard in Resources */,
 				AF3376C31E46849100D99027 /* GoogleService-Info.plist in Resources */,
 				AF33769C1E467E9500D99027 /* Assets.xcassets in Resources */,
+				AF3376C71E46897900D99027 /* Aux_Blue_Bkg.png in Resources */,
 				AF33769A1E467E9500D99027 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,8 +464,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF3376971E467E9500D99027 /* ViewController.swift in Sources */,
+				AF3376CD1E468EA600D99027 /* MainViewController.swift in Sources */,
 				AF3376951E467E9500D99027 /* AppDelegate.swift in Sources */,
+				AF3376C51E46895800D99027 /* SignInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -709,6 +721,7 @@
 				AF3376BB1E467E9500D99027 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF3376BC1E467E9500D99027 /* Build configuration list for PBXNativeTarget "AuxiliumTests" */ = {
 			isa = XCConfigurationList;
@@ -717,6 +730,7 @@
 				AF3376BE1E467E9500D99027 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF3376BF1E467E9500D99027 /* Build configuration list for PBXNativeTarget "AuxiliumUITests" */ = {
 			isa = XCConfigurationList;
@@ -725,6 +739,7 @@
 				AF3376C11E467E9500D99027 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,6 +8,10 @@ target 'Auxilium' do
   # Pods for Auxilium
   
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Database'
+
 
   target 'AuxiliumTests' do
     inherit! :search_paths
