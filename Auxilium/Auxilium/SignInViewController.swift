@@ -20,10 +20,6 @@ class SignInViewController: UIViewController {
         super.viewDidLoad()
         
     }
-    @IBAction func tapped(_ sender: Any) {
-        username.resignFirstResponder()
-        password.resignFirstResponder()
-    }
 
     override func viewDidAppear(_ animated: Bool) {
         if FIRAuth.auth()?.currentUser != nil {
