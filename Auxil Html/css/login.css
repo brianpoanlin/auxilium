@@ -25,6 +25,18 @@ a.active {
   outline: none;
 }
 
+#food-x{
+  margin-left: 7px;
+}
+
+#clean-x{
+  margin-left: 12px;
+}
+
+#charity-x{
+  margin-left: 24px;
+}
+
 h1,
 h2,
 h3,
