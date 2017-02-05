@@ -288,18 +288,13 @@
                                                     <!--2017-02-05 06:50:22 +0000-->
                                                 </date>
                                             </datePicker>
-<<<<<<< HEAD
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8R-Uw-iWa">
-                                                <rect key="frame" x="8" y="26" width="34" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-=======
+
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8R-Uw-iWa">
                                                 <rect key="frame" x="8" y="24" width="34" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="34" id="AN4-bI-ptm"/>
                                                     <constraint firstAttribute="height" constant="34" id="bNh-ss-m82"/>
                                                 </constraints>
->>>>>>> origin/master
                                                 <state key="normal" image="left_arrow.png"/>
                                                 <connections>
                                                     <segue destination="exC-Zc-ynj" kind="presentation" modalTransitionStyle="coverVertical" id="RN7-py-9MH"/>
