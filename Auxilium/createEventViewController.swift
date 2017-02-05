@@ -58,10 +58,22 @@ class createEventViewController: UIViewController {
         let uid = user?.uid
 
         
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd-MM-YYYY"
-        let strDate = dateFormatter.string(from: datePicker.date)
+        let dateFormatterMinutes = DateFormatter()
+        dateFormatterMinutes.dateFormat = "mm"
+        let strDateMin = dateFormatterMinutes.string(from: datePicker.date)
         
+        let dateFormatterHour = DateFormatter()
+        dateFormatterHour.dateFormat = "hh"
+        let strDateHour = dateFormatterHour.string(from: datePicker.date)
+
+        let dateFormatterDate = DateFormatter()
+        dateFormatterDate.dateFormat = "MM/dd"
+        let strDateDate = dateFormatterDate.string(from: datePicker.date)
+
+        print(strDateDate)
+        print(strDateHour)
+        print(strDateMin)
+
         let newEventRef = self.ref
             .child("master-events")
             .childByAutoId()
@@ -73,7 +85,7 @@ class createEventViewController: UIViewController {
             "event_name":eventName.text as AnyObject,
             "event_description":eventDescription.text! as AnyObject,
             "event_ownerID": uid as AnyObject ,
-            "event_time": ["event_date":strDate, "event_hour":"0", "event_minute":"0"] as AnyObject,
+            "event_time": ["event_date":strDateDate as AnyObject, "event_hour":strDateHour as AnyObject, "event_minute":strDateMin as AnyObject] as AnyObject,
             "event_location":["event_Lat":String(lat) as AnyObject, "event_long":String(withLong) as AnyObject,"event_locName":locationName.text!, "Address": ["street_number":streetNumber.text!,"street_name":streetNumber.text!,"street_city":"San Jose","street_state":locationState.text!, "street_zipcode":locationZip.text!] as AnyObject] as AnyObject,
             "event_category":eventCategory.text! as AnyObject
         ]
