@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,23 +16,24 @@
             <rect key="frame" x="0.0" y="0.0" width="448" height="117"/>
             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="448" height="116.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="448" height="116"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fpg-3C-CZb">
-                        <rect key="frame" x="21" y="16" width="89" height="82"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fpg-3C-CZb">
+                        <rect key="frame" x="18" y="17" width="89" height="82"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="89" id="5tY-uM-HZB"/>
+                            <constraint firstAttribute="height" constant="82" id="9La-20-xwb"/>
+                        </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hD9-TJ-SRN">
-                        <rect key="frame" x="130" y="8" width="251" height="57"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="hD9-TJ-SRN">
+                        <rect key="frame" x="127" y="22" width="110" height="28"/>
                         <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="21"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Event Description" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8C-gY-5Yb">
-                        <rect key="frame" x="124" y="46" width="219" height="45"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="Event Description" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8C-gY-5Yb">
+                        <rect key="frame" x="122" y="53" width="313" height="55.5"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="14"/>
@@ -39,6 +41,17 @@
                     </textView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="hD9-TJ-SRN" secondAttribute="trailing" constant="5" id="4NX-6B-oYS"/>
+                    <constraint firstItem="hD9-TJ-SRN" firstAttribute="top" secondItem="fpg-3C-CZb" secondAttribute="top" constant="5" id="8An-F9-caD"/>
+                    <constraint firstItem="H8C-gY-5Yb" firstAttribute="leading" secondItem="hD9-TJ-SRN" secondAttribute="leading" constant="-5" id="DeP-g9-VNC"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="H8C-gY-5Yb" secondAttribute="bottom" id="KnT-6i-9KH"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="H8C-gY-5Yb" secondAttribute="trailing" constant="5" id="YHZ-RN-DrQ"/>
+                    <constraint firstItem="fpg-3C-CZb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Z39-s6-ctl"/>
+                    <constraint firstItem="hD9-TJ-SRN" firstAttribute="leading" secondItem="fpg-3C-CZb" secondAttribute="trailing" constant="20" id="qxV-sD-7tq"/>
+                    <constraint firstItem="H8C-gY-5Yb" firstAttribute="top" secondItem="hD9-TJ-SRN" secondAttribute="bottom" constant="3" id="vq9-Xv-M2T"/>
+                    <constraint firstItem="fpg-3C-CZb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="zhh-qO-Adx"/>
+                </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
             <connections>

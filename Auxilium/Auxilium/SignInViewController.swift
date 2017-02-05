@@ -15,12 +15,18 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
     
+    @IBOutlet var tapper: UITapGestureRecognizer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
 
+    @IBAction func tapped(_ sender: Any) {
+        username.resignFirstResponder()
+        password.resignFirstResponder()
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         if FIRAuth.auth()?.currentUser != nil {
             print("user is signed in")
