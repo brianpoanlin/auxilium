@@ -31,6 +31,10 @@ class createEventViewController: UIViewController {
         super.viewDidLoad()
                // Do any additional setup after loading the view.
     }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -59,12 +63,17 @@ class createEventViewController: UIViewController {
             "event_description":eventDescription.text! as AnyObject,
             "event_ownerID": uid as AnyObject ,
             "event_time": ["event_date":strDate, "event_hour":"0", "event_minute":"0"] as AnyObject,
-            "event_location":["event_Lat":lat as AnyObject, "event_long":withLong as AnyObject,"event_locName":locationName.text!, "Address": ["street_number":streetNumber.text!,"street_name":streetNumber.text!,"street_city":"San Jose","street_state":locationState.text!, "street_zipcode":locationZip.text!] as AnyObject] as AnyObject,
+            "event_location":["event_Lat":String(lat) as AnyObject, "event_long":String(withLong) as AnyObject,"event_locName":locationName.text!, "Address": ["street_number":streetNumber.text!,"street_name":streetNumber.text!,"street_city":"San Jose","street_state":locationState.text!, "street_zipcode":locationZip.text!] as AnyObject] as AnyObject,
             "event_category":eventCategory.text! as AnyObject
         ]
         
         
         newEventRef.setValue(newEventData)
+        
+        let eventVC = self.topMostController().storyboard?.instantiateViewController(withIdentifier: "EventViewController") as! EventViewController
+        eventVC.toPass = self.id_to_submit
+//        self.window?.makeKeyAndVisible()
+        self.topMostController().present(eventVC, animated: true, completion: nil)
         
     }
     
@@ -94,6 +103,15 @@ class createEventViewController: UIViewController {
             }
         }
     }
+    
+    func topMostController() -> UIViewController {
+        var topController: UIViewController? = UIApplication.shared.keyWindow?.rootViewController
+        while ((topController?.presentedViewController) != nil) {
+            topController = topController?.presentedViewController
+        }
+        return topController!
+    }
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
