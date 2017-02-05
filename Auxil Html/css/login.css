@@ -248,11 +248,12 @@ body {
 	outline: 0;
 	border: 0;
 	font-size: 12px;
-	
+	text-align: center;
 }
 
 label{
 	line-height: 4px;
+	text-align: center;
 }
 
 #food{
