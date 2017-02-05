@@ -15,6 +15,7 @@ import CoreLocation
 import Alamofire
 
 class createEventViewController: UIViewController {
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var eventName: UITextField!
     @IBOutlet weak var eventCategory: UITextField!
     @IBOutlet weak var eventDescription: UITextView!
@@ -41,8 +42,29 @@ class createEventViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-               // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
+    
+    func keyboardWillShow(notification: NSNotification) {
+        if scrollView.contentOffset.y > 200 {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0{
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+        }
+        
+    }
+    
+    func keyboardWillHide(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y != 0{
+                self.view.frame.origin.y += keyboardSize.height
+            }
+        }
+    }
+
     
     override var prefersStatusBarHidden: Bool {
         return true

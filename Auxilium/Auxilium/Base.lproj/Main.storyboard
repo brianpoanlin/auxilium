@@ -452,6 +452,7 @@
                         <outlet property="locationName" destination="hyn-gI-yUT" id="9YQ-7Y-MBR"/>
                         <outlet property="locationState" destination="SwI-iy-l8w" id="S86-Ix-GEa"/>
                         <outlet property="locationZip" destination="nQZ-Yn-fo4" id="r4y-UE-JrW"/>
+                        <outlet property="scrollView" destination="DkA-CM-hpa" id="6n6-mV-aS2"/>
                         <outlet property="streetNumber" destination="NyU-nQ-sHp" id="1Gb-qf-y2w"/>
                         <outlet property="tap" destination="AKi-Bz-MUn" id="HVF-Tm-0dr"/>
                     </connections>
