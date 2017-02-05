@@ -34,10 +34,14 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     override var prefersStatusBarHidden: Bool{
         return true
     }
+    @IBAction func signOut(_ sender: Any) {
+        try! FIRAuth.auth()!.signOut()
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tappedTableView = false
-//        try! FIRAuth.auth()!.signOut()
       
 //        self.sendData()
       
