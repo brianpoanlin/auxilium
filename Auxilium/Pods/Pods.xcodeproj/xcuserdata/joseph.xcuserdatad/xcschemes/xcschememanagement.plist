@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>GTMSessionFetcher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,12 +42,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>107A9565F9DF88517DFD3E28C05B2B96</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>12B3CB579181A8B85D6CA0EB202443B4</key>
+		<key>164EA834A603437E098BD55CFC318B0E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,32 +52,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2A8FCBC0C43780AFAD077081099D69BB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>34026B3B9F181D24A137EB45357DDDA3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>4C90A6AC85247A7723EF1FA053163661</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>7D04535608058A2FABC0D16935868FB9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9DCF60AF66C0F4A20C5B0DEFD14D5645</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C052BEBFBD0AB5218CC64BA3450F6547</key>
 		<dict>
 			<key>primary</key>
 			<true/>

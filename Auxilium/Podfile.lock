@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.3.0)
   - Firebase/Auth (3.11.1):
     - Firebase/Core
     - FirebaseAuth (= 3.1.0)
@@ -48,6 +49,7 @@ PODS:
   - OneSignal (2.3.5)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.3)
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
@@ -55,6 +57,7 @@ DEPENDENCIES:
   - OneSignal
 
 SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
   Firebase: 53b2343db1ebfa3eb16bdb4318b8bb65360b2220
   FirebaseAnalytics: 9c67af0ebeb8d2146c9b4ea2616439affa947b58
   FirebaseAuth: b436e4ecebe068bf8e8c6e4e29de5756ffe7ee24
@@ -68,6 +71,6 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 6f8d8b28b7e345549ac471071608170b31cb4977
   OneSignal: 4cb42948ebc141bd5deb54d3fda25105db94f6d4
 
-PODFILE CHECKSUM: 961ddff689c1a5dcd997d291f8d765e8a1903adb
+PODFILE CHECKSUM: 44149f54968f605c2241721f950321ac589d2aff
 
 COCOAPODS: 1.1.1
