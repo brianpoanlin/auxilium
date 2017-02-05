@@ -13,6 +13,7 @@ function getEventInfo(eventID) {
             var childData = childSnapshot.val();
 
             if (key == "event_time") {
+
                 var eventDate, eventHour, eventMinute;
 
                 childSnapshot.forEach(function (timeSnapshot) {
@@ -56,6 +57,12 @@ function getEventInfo(eventID) {
         })
     }).then(function () {
         console.log("Event Information Successfully Retrieved!");
+
+        var timeStr = eventTime["date"] + " @ " + formatTime(eventTime["hour"], eventTime["minute"]);
+
+        console.log("timestr: " + timeStr);
+
+        eventArr[eventID]["event_time"] = timeStr;
 
         console.log("event arr : " + JSON.stringify(eventArr));
     })
