@@ -30,9 +30,12 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var tableView: UITableView!
 
-    
+    override var prefersStatusBarHidden: Bool{
+        return true
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.sendData()
         self.pullData()
         tableView.tableFooterView = UIView()
         tableView.register(UINib(nibName: "EventTableViewCell", bundle: nil), forCellReuseIdentifier: "event")
@@ -54,12 +57,12 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         let newEventId = newEventRef.key
         let newEventData:[String: AnyObject]  = [
             "event_id": newEventId as AnyObject,
-            "event_name":"Food Pantry" as AnyObject,
+            "event_name":"Cook Food at Pantry" as AnyObject,
             "event_description":"Deliver food" as AnyObject,
             "event_ownerID": "122233444xxxx"as AnyObject ,
             "event_time": ["event_date":"Date", "event_hour":"16", "event_minute":"40"] as AnyObject,
             "event_location":["event_Lat":"23.2222", "event_long":"35.33", "Address": ["street_number":"1030","street_name":"Harlan Dr","street_city":"San Jose","street_state":"California", "street_zipcode":"95129"] as AnyObject] as AnyObject,
-            "event_category":"test" as AnyObject
+            "event_category":"Food" as AnyObject
         ]
         
         
@@ -100,13 +103,11 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         let currentEvent = eventArray[indexPath.row]
         cell.eventName.text = currentEvent.value(forKey: "event_name") as? String
         cell.eventDescription.text = currentEvent.value(forKey: "event_description") as? String
-
-        //        let currentQuestion = questions[indexPath.row]
-        //        cell.questionLabel.text = currentQuestion["text"] as? String
-        //        cell.topicLabel.text = currentQuestion["topic"] as? String
-        //        cell.usernameLabel.text = (currentQuestion["student"] as! PFUser).username!
+        let imgStr = currentEvent.value(forKey: "event_category") as! String
+        cell.eventIcon.image = UIImage(named: "\(imgStr).png")
+        cell.backgroundColor = UIColor.clear
         
-                return cell
+        return cell
     }
     
 //     func tableView(_ tableView: UITableView!, cellForRowAt indexPath:IndexPath) -> UITableViewCell!
