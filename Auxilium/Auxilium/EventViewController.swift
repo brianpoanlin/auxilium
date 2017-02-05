@@ -20,8 +20,8 @@ class EventViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var dspText: UITextView!
     @IBOutlet weak var mapView: MKMapView!
     
-    var lat:Double = 40.730872
-    var long:Double = -74.003066
+    var lat:Double = 0.0
+    var long:Double = 0.0
     var LocationName:String = ""
     
     var toPass:String!

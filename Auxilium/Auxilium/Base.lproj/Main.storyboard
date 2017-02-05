@@ -150,7 +150,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Q2Q-4a-URP" kind="presentation" modalTransitionStyle="coverVertical" id="2NP-C5-HwK"/>
+                                    <segue destination="Q2Q-4a-URP" kind="presentation" modalTransitionStyle="coverVertical" id="lMH-Pl-n3y"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -162,7 +162,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mih-tq-Alf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="717.60000000000002" y="35.532233883058474"/>
+            <point key="canvasLocation" x="718" y="36"/>
         </scene>
         <!--Create Event View Controller-->
         <scene sceneID="Srs-x2-RWb">
@@ -183,15 +183,15 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DkA-CM-hpa">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Sm-fp-4Ip">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Sm-fp-4Ip">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Host New Event" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSD-hz-7rS">
-                                                <rect key="frame" x="0.0" y="68" width="375" height="73"/>
+                                                <rect key="frame" x="0.0" y="73" width="375" height="84"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.19485766267123289" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" red="0.34396693110466003" green="0.57703697681427002" blue="0.88243579864501953" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Event Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kI1-76-i1S">
@@ -239,30 +239,22 @@
                                                     <!--2017-02-05 06:50:22 +0000-->
                                                 </date>
                                             </datePicker>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8R-Uw-iWa">
+                                                <rect key="frame" x="8" y="24" width="34" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="left_arrow.png"/>
+                                                <connections>
+                                                    <segue destination="exC-Zc-ynj" kind="presentation" modalTransitionStyle="coverVertical" id="RN7-py-9MH"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1000" id="F4E-g3-VSF"/>
+                                            <constraint firstAttribute="height" constant="667" id="F4E-g3-VSF"/>
                                         </constraints>
                                     </view>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Location Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hyn-gI-yUT">
                                         <rect key="frame" x="0.0" y="699" width="375" height="64"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="State" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SwI-iy-l8w">
-                                        <rect key="frame" x="0.0" y="852" width="191" height="52"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Zip" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nQZ-Yn-fo4">
-                                        <rect key="frame" x="199" y="852" width="176" height="52"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -284,13 +276,32 @@
                                         <state key="normal" title="Create Event">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="createEvent:" destination="Q2Q-4a-URP" eventType="touchUpInside" id="9UE-j6-aez"/>
+                                        </connections>
                                     </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="State" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SwI-iy-l8w">
+                                        <rect key="frame" x="0.0" y="863" width="191" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Zip" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nQZ-Yn-fo4">
+                                        <rect key="frame" x="199" y="863" width="176" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="0Sm-fp-4Ip" secondAttribute="trailing" id="A5H-Ns-pfY"/>
                                     <constraint firstItem="0Sm-fp-4Ip" firstAttribute="top" secondItem="DkA-CM-hpa" secondAttribute="top" id="Z2D-pt-b3i"/>
                                     <constraint firstItem="0Sm-fp-4Ip" firstAttribute="leading" secondItem="DkA-CM-hpa" secondAttribute="leading" id="bvf-A9-dni"/>
-                                    <constraint firstAttribute="bottom" secondItem="0Sm-fp-4Ip" secondAttribute="bottom" id="pDa-sm-el7"/>
+                                    <constraint firstAttribute="bottom" secondItem="0Sm-fp-4Ip" secondAttribute="bottom" constant="333" id="pDa-sm-el7"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -305,10 +316,19 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="datePicker" destination="7i5-7k-juI" id="9Rn-Td-hOi"/>
+                        <outlet property="eventDescription" destination="DNg-KJ-hZA" id="jFV-zU-Xqt"/>
+                        <outlet property="eventName" destination="kI1-76-i1S" id="BNv-4U-5GE"/>
+                        <outlet property="locationName" destination="hyn-gI-yUT" id="9YQ-7Y-MBR"/>
+                        <outlet property="locationState" destination="SwI-iy-l8w" id="S86-Ix-GEa"/>
+                        <outlet property="locationZip" destination="nQZ-Yn-fo4" id="r4y-UE-JrW"/>
+                        <outlet property="streetNumber" destination="NyU-nQ-sHp" id="1Gb-qf-y2w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pAl-8H-ufN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="686" y="-1705"/>
+            <point key="canvasLocation" x="717.60000000000002" y="-857.27136431784118"/>
         </scene>
         <!--Event View Controller-->
         <scene sceneID="O5Z-my-WxF">
