@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import OneSignal
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        OneSignal.initWithLaunchOptions(launchOptions, appId: "11c7b74d-c1bb-4826-afea-3b49d9f0f581")
+        
         FIRApp.configure()
         return true
     }
