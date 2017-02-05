@@ -35,6 +35,10 @@ class EventViewController: UIViewController {
         eventsRef.child(toPass).observe(FIRDataEventType.value, with: { (snapshot) in
             let event = snapshot.value as? [String : AnyObject] ?? [:]
             let eventDict = event as NSDictionary
+            self.eventName.text = eventDict.value(forKey: "event_name") as! String?
+            let imgStr = eventDict.value(forKey: "event_category") as! String
+            self.iconImg.image = UIImage(named: "\(imgStr).png")
+            self.dspText.text = eventDict.value(forKey: "event_description") as! String?
             print(eventDict.value(forKey: "event_name"))
         })
         
