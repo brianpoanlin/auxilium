@@ -15,7 +15,7 @@ app.get('/send/:eventID', function(req, res) {
     var eventID = req.params.eventID;
     console.log("Sending a notification for Event ID: " + eventID);
     //getEventInfo("-KcAi_9M0J7UAN0za6Df");
-    getEventInfo(eventID);
+    //getEventInfo(eventID);
     res.end("Success");
 })
 
@@ -59,7 +59,7 @@ function loginUser(){
             console.log(error);
         }).then(function(){
         console.log("Logged in.")
-        getEventInfo("-KcAi_9M0J7UAN0za6Df");
+        getEventInfo("-KcBrVinxXeMi8IKCyGQ");
     });
 }
 
@@ -111,7 +111,7 @@ function getEventInfo(eventID){
         var titleString = eventName
         var descriptionString = eventCategory + " - " + eventTime["date"] + " @ " + formatTime(eventTime["hour"], eventTime["minute"]);
 
-        sendNote(titleString, descriptionString);
+        sendNote(titleString, descriptionString, eventID);
     })
 }
 
@@ -144,7 +144,7 @@ function formatTime(hour, minute){
 
 /***   NOTIFICATION   ***/
 
-function sendNote(title, description) {
+function sendNote(title, description, eventID) {
     var sendNotification = function (data) {
         var headers = {
             "Content-Type": "application/json; charset=utf-8",
@@ -180,6 +180,7 @@ function sendNote(title, description) {
         app_id: "11c7b74d-c1bb-4826-afea-3b49d9f0f581",
         contents: {"en": description},
         headings: {"en": title},
+        data: {"eventID": eventID},
         included_segments: ["All"]
     };
 
