@@ -45,12 +45,14 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMSessionFetcher/Core (1.1.8)
+  - OneSignal (2.3.5)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
+  - OneSignal
 
 SPEC CHECKSUMS:
   Firebase: 53b2343db1ebfa3eb16bdb4318b8bb65360b2220
@@ -64,7 +66,8 @@ SPEC CHECKSUMS:
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 6f8d8b28b7e345549ac471071608170b31cb4977
+  OneSignal: 4cb42948ebc141bd5deb54d3fda25105db94f6d4
 
-PODFILE CHECKSUM: ab1505e42b82efff893c05fff51511afb3e8b95e
+PODFILE CHECKSUM: 961ddff689c1a5dcd997d291f8d765e8a1903adb
 
 COCOAPODS: 1.1.1
