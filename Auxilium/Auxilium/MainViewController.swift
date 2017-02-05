@@ -35,7 +35,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.sendData()
+        //self.sendData()
         self.pullData()
         tableView.tableFooterView = UIView()
         tableView.register(UINib(nibName: "EventTableViewCell", bundle: nil), forCellReuseIdentifier: "event")
