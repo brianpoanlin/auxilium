@@ -17,6 +17,8 @@ class eventTableViewCell: UITableViewCell {
     @IBOutlet weak var eventName: UILabel!
     @IBOutlet weak var eventDescription: UITextView!
     @IBOutlet weak var eventIcon: UIImageView!
+    
+    
 }
 
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -33,7 +35,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         self.pullData()
         tableView.tableFooterView = UIView()
-        tableView.register(UINib(nibName: "eventTableViewCell", bundle: nil), forCellReuseIdentifier: "event")
+        tableView.register(UINib(nibName: "EventTableViewCell", bundle: nil), forCellReuseIdentifier: "event")
 
         // Do any additional setup after loading the view.
     }
@@ -97,6 +99,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.selectionStyle = .none
         let currentEvent = eventArray[indexPath.row]
         cell.eventName.text = currentEvent.value(forKey: "event_name") as? String
+        cell.eventDescription.text = currentEvent.value(forKey: "event_description") as? String
+
         //        let currentQuestion = questions[indexPath.row]
         //        cell.questionLabel.text = currentQuestion["text"] as? String
         //        cell.topicLabel.text = currentQuestion["topic"] as? String
