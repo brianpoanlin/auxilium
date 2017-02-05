@@ -75,6 +75,9 @@ function getEventInfo(eventID) {
 			case "Clean":
 				imgSrc = "img/Clean.png";
 				break;
+			case "Charity":
+				imgSrc = "img/Charity.png";
+				break;
 			default:
 				imgSrc = "img/logo.png";
 		}
