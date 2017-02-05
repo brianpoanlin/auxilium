@@ -60,6 +60,7 @@ function loginUser(){
             console.log(error);
         }).then(function(){
         console.log("Logged in.")
+        getEventInfo("-KcAi_9M0J7UAN0za6Df");
     });
 }
 
