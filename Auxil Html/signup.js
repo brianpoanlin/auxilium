@@ -1,10 +1,13 @@
 function signUp() {
-    console.log("u here");
 
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
     var cpassword = document.getElementById("c-password").value;
+
+    var foodx = document.getElementById("food-x").checked;
+    var cleanx = document.getElementById("clean-x").checked;
+    var charityx = document.getElementById("charity-x").checked;
 
     if(name.length <= 0){
         alert("Please enter a name.");
@@ -17,11 +20,11 @@ function signUp() {
     }else if(password != cpassword){
         alert("Passwords do not match. Please try again.");
     }else{
-        createUser(name, email, password);
+        createUser(name, email, password, foodx, cleanx, charityx);
     }
 }
 
-function createUser(name, email, password){
+function createUser(name, email, password, foodx, cleanx, charityx){
     firebase.auth().createUserWithEmailAndPassword(email, password)
         .catch(function(error) {
             // Handle Errors here.
@@ -41,7 +44,14 @@ function createUser(name, email, password){
                     displayName: name
                 }).then(function () {
                     // Update successful.
-                    window.location.href = "dashboard.html";
+
+                    firebase.database().ref('users/' + user.uid).set({
+                        Charity: charityx,
+                        Clean: cleanx,
+                        Food : foodx
+                    }).then(function(){
+                        window.location.href = "dashboard.html";
+                    });
 
                 }, function (error) {
                     // An error happened.
