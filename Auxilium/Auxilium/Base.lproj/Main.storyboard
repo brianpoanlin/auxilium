@@ -120,25 +120,18 @@
                                 <rect key="frame" x="0.0" y="133" width="375" height="534"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="123" id="UCf-fy-dFW" customClass="EventTableViewCell" customModule="Auxilium" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="123"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UCf-fy-dFW" id="JDl-2f-ZAz">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="122"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                                 <sections/>
                                 <connections>
-                                    <outlet property="dataSource" destination="exC-Zc-ynj" id="9Db-Fb-iGH"/>
-                                    <outlet property="delegate" destination="exC-Zc-ynj" id="3X4-Qd-5Qf"/>
+                                    <outlet property="dataSource" destination="exC-Zc-ynj" id="iF2-pq-olW"/>
+                                    <outlet property="delegate" destination="exC-Zc-ynj" id="anN-ky-4YR"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="LDx-KQ-b0p" id="1Zl-CI-GiI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mih-tq-Alf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
