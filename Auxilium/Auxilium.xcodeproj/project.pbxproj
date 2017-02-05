@@ -647,7 +647,7 @@
 				DEVELOPMENT_TEAM = V43B8P7A9G;
 				INFOPLIST_FILE = Auxilium/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.brian.losaltoshacks.Auxilium;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brianlin.LAH.auxilium;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -662,7 +662,7 @@
 				DEVELOPMENT_TEAM = V43B8P7A9G;
 				INFOPLIST_FILE = Auxilium/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.brian.losaltoshacks.Auxilium;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brianlin.LAH.auxilium;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
