@@ -10,6 +10,7 @@
 		37A84D60DD52EFA599030C5D /* Pods_AuxiliumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC46879FCF70848A15A281F9 /* Pods_AuxiliumTests.framework */; };
 		67122D28CBEF2CB49F7F2C52 /* Pods_AuxiliumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB69BA073133B612B8E5C502 /* Pods_AuxiliumUITests.framework */; };
 		AF2BE3EA1E46F8B200004582 /* left_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = AF2BE3E91E46F8B200004582 /* left_arrow.png */; };
+		AF2BE3EC1E47098200004582 /* createEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BE3EB1E47098200004582 /* createEventViewController.swift */; };
 		AF3376951E467E9500D99027 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3376941E467E9500D99027 /* AppDelegate.swift */; };
 		AF33769A1E467E9500D99027 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF3376981E467E9500D99027 /* Main.storyboard */; };
 		AF33769C1E467E9500D99027 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF33769B1E467E9500D99027 /* Assets.xcassets */; };
@@ -54,6 +55,7 @@
 		8E20C2FB5986752AB35CFD6C /* Pods-AuxiliumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuxiliumTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AuxiliumTests/Pods-AuxiliumTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9CCE26D1D0DCB78060B42346 /* Pods-Auxilium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auxilium.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Auxilium/Pods-Auxilium.debug.xcconfig"; sourceTree = "<group>"; };
 		AF2BE3E91E46F8B200004582 /* left_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_arrow.png; sourceTree = "<group>"; };
+		AF2BE3EB1E47098200004582 /* createEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createEventViewController.swift; sourceTree = "<group>"; };
 		AF3376911E467E9500D99027 /* Auxilium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Auxilium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF3376941E467E9500D99027 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF3376991E467E9500D99027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 		AF3376881E467E9400D99027 = {
 			isa = PBXGroup;
 			children = (
+				AF2BE3EB1E47098200004582 /* createEventViewController.swift */,
 				AF3376931E467E9500D99027 /* Auxilium */,
 				AF3376A81E467E9500D99027 /* AuxiliumTests */,
 				AF3376B31E467E9500D99027 /* AuxiliumUITests */,
@@ -493,6 +496,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF2BE3EC1E47098200004582 /* createEventViewController.swift in Sources */,
 				AF3376CD1E468EA600D99027 /* MainViewController.swift in Sources */,
 				AFC72D0B1E46DB42003805CC /* EventViewController.swift in Sources */,
 				AF3376951E467E9500D99027 /* AppDelegate.swift in Sources */,
