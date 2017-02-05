@@ -15,7 +15,7 @@ app.get('/send/:eventID', function(req, res) {
     var eventID = req.params.eventID;
     console.log("Sending a notification for Event ID: " + eventID);
     //getEventInfo("-KcAi_9M0J7UAN0za6Df");
-    //getEventInfo(eventID);
+    getEventInfo(eventID);
     res.end("Success");
 })
 
@@ -59,7 +59,7 @@ function loginUser(){
             console.log(error);
         }).then(function(){
         console.log("Logged in.")
-        getEventInfo("-KcBrVinxXeMi8IKCyGQ");
+        //getEventInfo("-KcBrVinxXeMi8IKCyGQ");
     });
 }
 
@@ -111,9 +111,33 @@ function getEventInfo(eventID){
         var titleString = eventName
         var descriptionString = eventCategory + " - " + eventTime["date"] + " @ " + formatTime(eventTime["hour"], eventTime["minute"]);
 
-        sendNote(titleString, descriptionString, eventID);
+        var playerArr = categoryArray(eventCategory, titleString, descriptionString, eventID);
+
+        //sendNote(titleString, descriptionString, eventID);
     })
 }
+
+function categoryArray(category, titleString, descriptionString, eventID){
+    var playerArr = [];
+
+    var ref = firebase.database().ref("users");
+    ref.once("value").then(function (snapshot) {
+        snapshot.forEach(function (childSnapshot) {
+            console.log("the key here: " + childSnapshot.key);
+            console.log("the clean here: " + childSnapshot.child(category).val());
+            if(childSnapshot.child(category).val() == true){
+                var playerID = childSnapshot.child("player_id").val();
+                playerArr.push(playerID);
+            }
+        })
+    }).then(function () {
+        console.log("the player ar: " + playerArr);
+
+        sendNote(titleString, descriptionString, eventID, playerArr);
+        //return playerArr;
+    })
+}
+
 
 //sendNote("Test Notification", "the test")
 
@@ -144,7 +168,7 @@ function formatTime(hour, minute){
 
 /***   NOTIFICATION   ***/
 
-function sendNote(title, description, eventID) {
+function sendNote(title, description, eventID, playerArr) {
     var sendNotification = function (data) {
         var headers = {
             "Content-Type": "application/json; charset=utf-8",
@@ -176,12 +200,20 @@ function sendNote(title, description, eventID) {
         req.end();
     };
 
-    var message = {
+    /*var message = {
         app_id: "11c7b74d-c1bb-4826-afea-3b49d9f0f581",
         contents: {"en": description},
         headings: {"en": title},
         data: {"eventID": eventID},
         included_segments: ["All"]
+    };*/
+
+    var message = {
+        app_id: "11c7b74d-c1bb-4826-afea-3b49d9f0f581",
+        contents: {"en": description},
+        headings: {"en": title},
+        data: {"eventID": eventID},
+        include_player_ids: playerArr
     };
 
     sendNotification(message);

@@ -42,8 +42,10 @@ function createUser(name, email, password){
                 }).then(function () {
                     // Update successful.
                     window.location.href = "dashboard.html";
+
                 }, function (error) {
                     // An error happened.
+                    console.log("error: " + error);
                 });
             }
     });
