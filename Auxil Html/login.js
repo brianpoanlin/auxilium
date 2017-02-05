@@ -17,9 +17,8 @@ firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
         console.log("the user");
         console.log("user: " + firebase.auth().currentUser.email);
-	
+		console.log("user: " + firebase.auth().currentUser.displayName);
 		window.location.href = "dashboard.html";
-        //REDIRECT
     } else {
         console.log("no user");
     }
