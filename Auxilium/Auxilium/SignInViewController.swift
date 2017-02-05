@@ -24,6 +24,10 @@ class SignInViewController: UIViewController {
         
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     func keyboardWillShow(notification: NSNotification) {
         
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {

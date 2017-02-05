@@ -37,7 +37,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         tappedTableView = false
-
+//        try! FIRAuth.auth()!.signOut()
       
 //        self.sendData()
       
