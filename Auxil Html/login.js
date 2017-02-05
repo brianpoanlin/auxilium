@@ -18,10 +18,11 @@ configFB();
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
         console.log("the user");
+        console.log("user: " + firebase.auth().currentUser.email);
 
         //REDIRECT
     } else {
-        //console.log("no user");
+        console.log("no user");
     }
 });
 
