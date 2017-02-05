@@ -12,6 +12,7 @@ import FirebaseStorage
 import FirebaseAuth
 import FirebaseDatabase
 import CoreLocation
+import Alamofire
 
 class createEventViewController: UIViewController {
     @IBOutlet weak var eventName: UITextField!
@@ -93,11 +94,25 @@ class createEventViewController: UIViewController {
         
         newEventRef.setValue(newEventData)
         
+        makeRequest(eventID: newEventId);
+        
         let eventVC = self.topMostController().storyboard?.instantiateViewController(withIdentifier: "EventViewController") as! EventViewController
         eventVC.toPass = self.id_to_submit
 //        self.window?.makeKeyAndVisible()
         self.topMostController().present(eventVC, animated: true, completion: nil)
         
+        
+    }
+    
+    func makeRequest(eventID: String){
+        print("yOOOO")
+        let url = "http://localhost:3000/"
+        
+        Alamofire.request(url + "send/" + eventID).responseJSON { response in
+            if let data = response.data, let dataString = String(data: data, encoding: .utf8) {
+                print("Result: " + dataString)
+            }
+        }
     }
     
     
