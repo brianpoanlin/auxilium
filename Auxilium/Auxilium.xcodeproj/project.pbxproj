@@ -20,7 +20,6 @@
 		AF3376C71E46897900D99027 /* Aux_Blue_Bkg.png in Resources */ = {isa = PBXBuildFile; fileRef = AF3376C61E46897900D99027 /* Aux_Blue_Bkg.png */; };
 		AF3376CB1E4689F400D99027 /* Logo_White.png in Resources */ = {isa = PBXBuildFile; fileRef = AF3376CA1E4689F400D99027 /* Logo_White.png */; };
 		AF3376CD1E468EA600D99027 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3376CC1E468EA600D99027 /* MainViewController.swift */; };
-		AF3408B71E46BB5700312163 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF3408B51E46BB5700312163 /* EventTableViewCell.xib */; };
 		BC17248645D086D6E8ECC46C /* Pods_Auxilium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF6C9040D9B61D030A1BAB3 /* Pods_Auxilium.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,7 +65,7 @@
 		AF3376C61E46897900D99027 /* Aux_Blue_Bkg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aux_Blue_Bkg.png; sourceTree = "<group>"; };
 		AF3376CA1E4689F400D99027 /* Logo_White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_White.png; sourceTree = "<group>"; };
 		AF3376CC1E468EA600D99027 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		AF3408B51E46BB5700312163 /* EventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
+		AF6EBF8C1E46C6B60031C8F0 /* Auxilium.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Auxilium.entitlements; sourceTree = "<group>"; };
 		BB69BA073133B612B8E5C502 /* Pods_AuxiliumUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuxiliumUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC46879FCF70848A15A281F9 /* Pods_AuxiliumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuxiliumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -134,10 +133,10 @@
 		AF3376931E467E9500D99027 /* Auxilium */ = {
 			isa = PBXGroup;
 			children = (
+				AF6EBF8C1E46C6B60031C8F0 /* Auxilium.entitlements */,
 				AF3376941E467E9500D99027 /* AppDelegate.swift */,
 				AF3376981E467E9500D99027 /* Main.storyboard */,
 				AF3376CC1E468EA600D99027 /* MainViewController.swift */,
-				AF3408B51E46BB5700312163 /* EventTableViewCell.xib */,
 				AF3376C41E46895800D99027 /* SignInViewController.swift */,
 				AF33769B1E467E9500D99027 /* Assets.xcassets */,
 				AF33769D1E467E9500D99027 /* LaunchScreen.storyboard */,
@@ -259,6 +258,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = V43B8P7A9G;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					AF3376A41E467E9500D99027 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -305,7 +309,6 @@
 				AF33769C1E467E9500D99027 /* Assets.xcassets in Resources */,
 				AF3376C71E46897900D99027 /* Aux_Blue_Bkg.png in Resources */,
 				AF33769A1E467E9500D99027 /* Main.storyboard in Resources */,
-				AF3408B71E46BB5700312163 /* EventTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,6 +624,7 @@
 			baseConfigurationReference = 9CCE26D1D0DCB78060B42346 /* Pods-Auxilium.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_ENTITLEMENTS = Auxilium/Auxilium.entitlements;
 				DEVELOPMENT_TEAM = V43B8P7A9G;
 				INFOPLIST_FILE = Auxilium/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -635,6 +639,7 @@
 			baseConfigurationReference = 4A0EBB5A900AA5C71DBBCB79 /* Pods-Auxilium.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_ENTITLEMENTS = Auxilium/Auxilium.entitlements;
 				DEVELOPMENT_TEAM = V43B8P7A9G;
 				INFOPLIST_FILE = Auxilium/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
