@@ -27,6 +27,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     let eventsRef = FIRDatabase.database().reference(withPath: "master-events")
 
     var eventArray : [NSDictionary] = []
+    var id_to_pass = "";
     
     @IBOutlet weak var tableView: UITableView!
 
@@ -35,7 +36,10 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.sendData()
+
+      
+        //self.sendData()
+      
         self.pullData()
         tableView.tableFooterView = UIView()
         tableView.register(UINib(nibName: "EventTableViewCell", bundle: nil), forCellReuseIdentifier: "event")
@@ -78,7 +82,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                 for child in snapshot.children.allObjects as? [FIRDataSnapshot] ?? []{
                     let eventDataSimp: [String: String] =  ["event_name":child.childSnapshot(forPath: "event_name").value as! String,
                                                              "event_description":child.childSnapshot(forPath: "event_description").value as! String,
-                                                             "event_category":child.childSnapshot(forPath: "event_category").value as! String]
+                                                             "event_category":child.childSnapshot(forPath: "event_category").value as! String,
+                                                             "event_id":child.key as! String]
                     self.eventArray.append(eventDataSimp as NSDictionary)
                     self.tableView.reloadData()
                 }
@@ -106,23 +111,23 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         let imgStr = currentEvent.value(forKey: "event_category") as! String
         cell.eventIcon.image = UIImage(named: "\(imgStr).png")
         cell.backgroundColor = UIColor.clear
-        
+        self.tableView.rowHeight = 120.0
+
         return cell
     }
     
-//     func tableView(_ tableView: UITableView!, cellForRowAt indexPath:IndexPath) -> UITableViewCell!
-//    {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "request", for: indexPath) as! eventTableViewCell
-//        cell.selectionStyle = .none
-////        let currentQuestion = questions[indexPath.row]
-////        cell.questionLabel.text = currentQuestion["text"] as? String
-////        cell.topicLabel.text = currentQuestion["topic"] as? String
-////        cell.usernameLabel.text = (currentQuestion["student"] as! PFUser).username!
-//        
-//        return cell
-//
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("tapped \(eventArray[indexPath.row].value(forKey: "event_id") as? String)")
+        let id = eventArray[indexPath.row].value(forKey: "event_id") as? String
+        id_to_pass = String(id!)
+        self.performSegue(withIdentifier: "toEventDetails", sender: self)
+    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            let eventView = segue.destination as! EventViewController
+            eventView.toPass = self.id_to_pass
+    }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
