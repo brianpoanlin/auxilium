@@ -8,11 +8,6 @@ function signUp() {
     var password = document.getElementById("password").value;
     var cpassword = document.getElementById("c-password").value;
 
-    console.log("name: " + name);
-    console.log("email: " + email);
-    console.log("pass: " + password);
-    console.log("c-pass: " + cpassword);
-
     if(name.length <= 0){
         alert("Please enter a name.");
     }else if(email.length <= 0){
@@ -24,11 +19,11 @@ function signUp() {
     }else if(password != cpassword){
         alert("Passwords do not match. Please try again.");
     }else{
-        createUser(email, password);
+        createUser(name, email, password);
     }
 }
 
-function createUser(email, password){
+function createUser(name, email, password){
     firebase.auth().createUserWithEmailAndPassword(email, password)
         .catch(function(error) {
             // Handle Errors here.
@@ -40,5 +35,15 @@ function createUser(email, password){
                 alert(errorMessage);
             }
             console.log(error);
-        });
+        }).then(function () {
+            var user = firebase.auth().currentUser;
+
+            user.updateProfile({
+                displayName: name
+            }).then(function() {
+                // Update successful.
+            }, function(error) {
+                // An error happened.
+            });
+    });
 }
