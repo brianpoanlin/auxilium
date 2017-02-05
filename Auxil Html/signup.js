@@ -1,5 +1,3 @@
-
-
 function signUp() {
     console.log("u here");
 
@@ -38,12 +36,15 @@ function createUser(name, email, password){
         }).then(function () {
             var user = firebase.auth().currentUser;
 
-            user.updateProfile({
-                displayName: name
-            }).then(function() {
-                // Update successful.
-            }, function(error) {
-                // An error happened.
-            });
+            if(user != null) {
+                user.updateProfile({
+                    displayName: name
+                }).then(function () {
+                    // Update successful.
+                    window.location.href = "dashboard.html";
+                }, function (error) {
+                    // An error happened.
+                });
+            }
     });
 }
