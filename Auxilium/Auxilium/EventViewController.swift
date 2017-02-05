@@ -31,6 +31,7 @@ class EventViewController: UIViewController, MKMapViewDelegate {
         super.viewDidLoad()
         print("passed \(toPass)")
         mapView.delegate = self
+        eventName.adjustsFontSizeToFitWidth = true;
         self.pullData()
         self.mapView.showAnnotations(self.mapView.annotations, animated: true)
 
