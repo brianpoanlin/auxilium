@@ -26,6 +26,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     let ref = FIRDatabase.database().reference()
     let eventsRef = FIRDatabase.database().reference(withPath: "master-events")
 
+    var tappedTableView = false
     var eventArray : [NSDictionary] = []
     var id_to_pass = "";
     
@@ -36,6 +37,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        tappedTableView = false
 
       
 //        self.sendData()
@@ -117,6 +119,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tappedTableView = true
         print("tapped \(eventArray[indexPath.row].value(forKey: "event_id") as? String)")
         let id = eventArray[indexPath.row].value(forKey: "event_id") as? String
         id_to_pass = String(id!)
@@ -124,8 +127,10 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if tappedTableView == true {
             let eventView = segue.destination as! EventViewController
             eventView.toPass = self.id_to_pass
+        }
     }
 
     

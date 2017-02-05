@@ -146,9 +146,9 @@
 			isa = PBXGroup;
 			children = (
 				AF6EBF8C1E46C6B60031C8F0 /* Auxilium.entitlements */,
-				AF2BE3EB1E47098200004582 /* createEventViewController.swift */,
 				AF3376941E467E9500D99027 /* AppDelegate.swift */,
 				AF3376981E467E9500D99027 /* Main.storyboard */,
+				AF2BE3EB1E47098200004582 /* createEventViewController.swift */,
 				AFC72D0A1E46DB42003805CC /* EventViewController.swift */,
 				AF3376CC1E468EA600D99027 /* MainViewController.swift */,
 				AF3376C41E46895800D99027 /* SignInViewController.swift */,
