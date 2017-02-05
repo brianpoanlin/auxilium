@@ -24,6 +24,7 @@ class createEventViewController: UIViewController {
     @IBOutlet weak var locationState: UITextField!
     @IBOutlet weak var locationZip: UITextField!
     var id_to_submit=""
+    var hasId = false
     
     @IBOutlet var tap: UITapGestureRecognizer!
     let ref = FIRDatabase.database().reference()
@@ -57,6 +58,7 @@ class createEventViewController: UIViewController {
         let user = FIRAuth.auth()?.currentUser
         let uid = user?.uid
 
+        hasId = true
         
         let dateFormatterMinutes = DateFormatter()
         dateFormatterMinutes.dateFormat = "mm"
@@ -152,9 +154,11 @@ class createEventViewController: UIViewController {
 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if hasId == true {
             let eventView = segue.destination as! EventViewController
             eventView.toPass = self.id_to_submit
-    }
+        }
 
+        }
+        
 }

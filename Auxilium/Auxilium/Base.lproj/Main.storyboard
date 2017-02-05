@@ -288,7 +288,6 @@
                                                     <!--2017-02-05 06:50:22 +0000-->
                                                 </date>
                                             </datePicker>
-
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8R-Uw-iWa">
                                                 <rect key="frame" x="8" y="24" width="34" height="34"/>
                                                 <constraints>
@@ -297,7 +296,7 @@
                                                 </constraints>
                                                 <state key="normal" image="left_arrow.png"/>
                                                 <connections>
-                                                    <segue destination="exC-Zc-ynj" kind="presentation" modalTransitionStyle="coverVertical" id="RN7-py-9MH"/>
+                                                    <segue destination="exC-Zc-ynj" kind="presentation" modalTransitionStyle="coverVertical" id="Duc-K0-dqO"/>
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Event Category" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9BJ-4q-CeG">
@@ -464,7 +463,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="783" y="-779"/>
+            <point key="canvasLocation" x="2433" y="-114"/>
         </scene>
         <!--Event View Controller-->
         <scene sceneID="O5Z-my-WxF">
@@ -566,6 +565,6 @@
         <image name="left_arrow.png" width="1200" height="1200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="RN7-py-9MH"/>
+        <segue reference="Duc-K0-dqO"/>
     </inferredMetricsTieBreakers>
 </document>
