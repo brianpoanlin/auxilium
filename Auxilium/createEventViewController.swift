@@ -24,8 +24,18 @@ class createEventViewController: UIViewController {
     @IBOutlet weak var locationZip: UITextField!
     var id_to_submit=""
     
+    @IBOutlet var tap: UITapGestureRecognizer!
     let ref = FIRDatabase.database().reference()
     let eventsRef = FIRDatabase.database().reference(withPath: "master-events")
+    
+    @IBAction func tapped(_ sender: Any) {
+        eventName.resignFirstResponder()
+        eventCategory.resignFirstResponder()
+        locationName.resignFirstResponder()
+        streetNumber.resignFirstResponder()
+        locationState.resignFirstResponder()
+        locationZip.resignFirstResponder()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,6 +73,7 @@ class createEventViewController: UIViewController {
             "event_category":eventCategory.text! as AnyObject
         ]
         
+        print("event id: " + newEventId)
         
         newEventRef.setValue(newEventData)
         
