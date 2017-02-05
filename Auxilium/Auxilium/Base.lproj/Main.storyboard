@@ -526,8 +526,8 @@
                                     <outletCollection property="gestureRecognizers" destination="DFJ-6a-tDy" appends="YES" id="UTg-gE-Mtf"/>
                                 </connections>
                             </mapView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="LOL" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GT5-Nj-5Zl">
-                                <rect key="frame" x="26" y="244" width="338" height="38.5"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GT5-Nj-5Zl">
+                                <rect key="frame" x="26" y="244" width="338" height="39"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="17"/>
@@ -594,6 +594,6 @@
         <image name="left_arrow.png" width="1200" height="1200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ubD-cL-Mnu"/>
+        <segue reference="YWd-7i-8Xp"/>
     </inferredMetricsTieBreakers>
 </document>
