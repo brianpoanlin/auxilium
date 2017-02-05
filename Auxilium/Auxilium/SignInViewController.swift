@@ -9,6 +9,8 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import OneSignal
+import FirebaseDatabase
 
 class SignInViewController: UIViewController {
 
@@ -53,6 +55,29 @@ class SignInViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         if FIRAuth.auth()?.currentUser != nil {
             print("user is signed in")
+            let UID = FIRAuth.auth()?.currentUser?.uid
+
+            let newPth = FIRDatabase.database().reference().child("users/").child(UID!)
+            
+            var playerID="0"
+            
+            print(newPth)
+            
+            OneSignal.idsAvailable({(_ userId, _ pushToken) in
+                print("UserId:\(userId)")
+                playerID = userId!
+                newPth.child("player_id").setValue(userId)
+
+                if pushToken != nil {
+                    print("pushToken:\(pushToken)")
+                }
+            })
+            
+//            let newPlayerID:[String: String]  = [
+//                "playerID": playerID]
+            
+            
+
             self.performSegue(withIdentifier: "toMainView", sender: nil)
             
         } else {
@@ -71,6 +96,25 @@ class SignInViewController: UIViewController {
         FIRAuth.auth()?.signIn(withEmail: self.username.text!, password: self.password.text!) { (user, error) in
             if user != nil {
                 print("sign in successful")
+                let newPth = FIRDatabase.database().reference().child((user?.uid)!)
+                
+                var playerID="0"
+                
+                OneSignal.idsAvailable({(_ userId, _ pushToken) in
+                    print("UserId:\(userId)")
+                    playerID = userId!
+                    if pushToken != nil {
+                        print("pushToken:\(pushToken)")
+                    }
+                })
+                
+                
+                let newPlayerID:[String: String]  = [
+                    "playerID": playerID]
+                
+                
+                newPth.setValue(newPlayerID)
+                
                 self.performSegue(withIdentifier: "toMainView", sender: nil)
             }
         }

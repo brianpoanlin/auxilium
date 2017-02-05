@@ -476,17 +476,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tdd-2x-c4J">
-                                <rect key="frame" x="137" y="45" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="4vU-m7-7zQ"/>
-                                    <constraint firstAttribute="height" constant="100" id="Qht-T7-Sif"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="tT0-xd-8uG">
-                                <rect key="frame" x="146" y="165" width="83.5" height="74"/>
+                                <rect key="frame" x="145" y="195" width="84" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="74" id="C8P-lO-Ein"/>
+                                    <constraint firstAttribute="height" constant="50" id="C8P-lO-Ein"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -517,19 +510,26 @@
                                     <segue destination="exC-Zc-ynj" kind="presentation" modalTransitionStyle="coverVertical" id="YWd-7i-8Xp"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tdd-2x-c4J">
+                                <rect key="frame" x="137" y="80" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4vU-m7-7zQ"/>
+                                    <constraint firstAttribute="height" constant="100" id="Qht-T7-Sif"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="tdd-2x-c4J" firstAttribute="centerX" secondItem="mgN-3D-ePK" secondAttribute="centerX" id="5co-ic-nCI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gk1-6r-71P" secondAttribute="trailing" constant="11" id="6Oa-Ei-DXq"/>
-                            <constraint firstItem="GT5-Nj-5Zl" firstAttribute="top" secondItem="tT0-xd-8uG" secondAttribute="bottom" constant="5" id="CmK-Fu-IbD"/>
+                            <constraint firstItem="GT5-Nj-5Zl" firstAttribute="top" secondItem="tT0-xd-8uG" secondAttribute="bottom" constant="-1" id="CmK-Fu-IbD"/>
                             <constraint firstItem="gk1-6r-71P" firstAttribute="top" secondItem="GT5-Nj-5Zl" secondAttribute="bottom" constant="20" id="Dti-fq-aHx"/>
                             <constraint firstItem="GT5-Nj-5Zl" firstAttribute="leading" secondItem="mgN-3D-ePK" secondAttribute="leadingMargin" constant="10" id="ESL-ih-8GG"/>
-                            <constraint firstItem="tT0-xd-8uG" firstAttribute="top" secondItem="tdd-2x-c4J" secondAttribute="bottom" constant="20" id="KBg-od-Md7"/>
+                            <constraint firstItem="tT0-xd-8uG" firstAttribute="top" secondItem="tdd-2x-c4J" secondAttribute="bottom" constant="15" id="KBg-od-Md7"/>
                             <constraint firstItem="GT5-Nj-5Zl" firstAttribute="trailing" secondItem="mgN-3D-ePK" secondAttribute="trailingMargin" constant="5" id="QGX-zg-Pqp"/>
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="tT0-xd-8uG" secondAttribute="trailing" constant="10" id="cZ2-18-6Cz"/>
                             <constraint firstItem="pFW-qA-5bS" firstAttribute="top" secondItem="gk1-6r-71P" secondAttribute="bottom" constant="37" id="eYz-iw-7vp"/>
-                            <constraint firstItem="tdd-2x-c4J" firstAttribute="top" secondItem="8H8-5U-RvH" secondAttribute="bottom" constant="25" id="enT-fw-Mao"/>
+                            <constraint firstItem="tdd-2x-c4J" firstAttribute="top" secondItem="8H8-5U-RvH" secondAttribute="bottom" constant="60" id="enT-fw-Mao"/>
                             <constraint firstItem="HKK-tp-XiC" firstAttribute="leading" secondItem="mgN-3D-ePK" secondAttribute="leadingMargin" id="g0O-gu-LKu"/>
                             <constraint firstItem="tT0-xd-8uG" firstAttribute="centerX" secondItem="mgN-3D-ePK" secondAttribute="centerX" id="k5W-20-bmG"/>
                             <constraint firstItem="gk1-6r-71P" firstAttribute="leading" secondItem="mgN-3D-ePK" secondAttribute="leadingMargin" constant="10" id="n94-OZ-gMO"/>
@@ -560,6 +560,6 @@
         <image name="left_arrow.png" width="1200" height="1200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ubD-cL-Mnu"/>
+        <segue reference="YWd-7i-8Xp"/>
     </inferredMetricsTieBreakers>
 </document>
