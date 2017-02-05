@@ -75,6 +75,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                                                              "event_description":child.childSnapshot(forPath: "event_description").value as! String,
                                                              "event_category":child.childSnapshot(forPath: "event_category").value as! String]
                     self.eventArray.append(eventDataSimp as NSDictionary)
+                    self.tableView.reloadData()
                 }
                 print("DONE")
             })
@@ -92,7 +93,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "request", for: indexPath) as! eventTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "event", for: indexPath) as! eventTableViewCell
         cell.selectionStyle = .none
         let currentEvent = eventArray[indexPath.row]
         cell.eventName.text = currentEvent.value(forKey: "event_name") as? String
