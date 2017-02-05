@@ -32,7 +32,8 @@ class EventViewController: UIViewController, MKMapViewDelegate {
         print("passed \(toPass)")
         mapView.delegate = self
         self.pullData()
-        
+        self.mapView.showAnnotations(self.mapView.annotations, animated: true)
+
       
     
         // Do any additional setup after loading the view.
@@ -52,14 +53,18 @@ class EventViewController: UIViewController, MKMapViewDelegate {
             self.iconImg.image = UIImage(named: "\(imgStr).png")
             self.dspText.text = eventDict.value(forKey: "event_description") as! String?
             let corrdinates:NSDictionary = eventDict.object(forKey: "event_location") as! NSDictionary
-            self.lat = corrdinates.value(forKey: "event_Lat") as! Double
-            self.lat = corrdinates.value(forKey: "event_Long") as! Double
-            
+            let latLoc:Double = ((corrdinates.value(forKey: "event_Lat") as? NSString)?.doubleValue)!
+            let longLoc:Double = ((corrdinates.value(forKey: "event_long") as? NSString)?.doubleValue)!
+            self.lat = latLoc
+            self.long = longLoc
+            let locNameLocal:String = corrdinates.value(forKey: "event_locName") as! String
+            self.LocationName = locNameLocal
             
             let dropPin = MKPointAnnotation()
-            dropPin.coordinate = CLLocationCoordinate2DMake(40.730872, -74.003066)
+            dropPin.coordinate = CLLocationCoordinate2DMake(self.lat, self.long)
             dropPin.title = self.LocationName
             self.mapView.addAnnotation(dropPin)
+            self.mapView.selectAnnotation(dropPin, animated: true)
             self.mapView.showAnnotations(self.mapView.annotations, animated: true)
 
         })
