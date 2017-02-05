@@ -23,7 +23,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Theme CSS -->
-    <link href="css/dashboard.css" rel="stylesheet">
+    <link href="css/eventview.css" rel="stylesheet">
 	
 	<!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -41,7 +41,7 @@
     <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-database.js"></script>
     <script src="signup.js"></script>
 	<script src="fb.js"></script>
-	<script src="dash.js"></script>
+	<script src="eventview.js"></script>
 	
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -84,19 +84,20 @@
     </nav>
 	
     <div class="container" id="page-wrap">
-		<div class="container" id="table-wrap">
-			<table class="table table-hover">
-				<thead>
-					<tr>
-						<th>Icon</th>
-						<th>Event</th>
-						<th>Location</th>
-						<th>Time</th>
-					</tr>
-				</thead>
-				<tbody>
-				
-			</table>
+		<div class="container" id="paragraph-wrap">
+			<div class = "container" id="title-wrap">
+				<p><!--Event_Name--></p>
+			</div>
+			<div class = "container" id="description-wrap">
+				<p><!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.--></p>
+			</div>
+			<div class="container" id="location-wrap">
+				<p><!--street_number street_name, street_city, street_state, street_zipcode--></p>
+			</div>
+			<div class="container" id="time-wrap">
+				<p><!--Date @ Time--></p>
+			</div>
+			<button id="back-button" onclick= "window.location.href = 'dashboard.html'">Back</button>
 		</div>
     </div>
 
@@ -108,8 +109,7 @@
 				};
 			});
 				
-			//$('.table').innerHTML = $('.table').innerHTML + '<tr><th scope="row">P</th><td style="background-color:#0">Shoreline Cleanup</td><td>Santa Cruz, CA</td>td>Feb 18</td></tr>'; 
-			});
+		});
 	</script>
 
     <script src="js/navbar2.0.js"></script>

@@ -5,6 +5,8 @@ function getEventInfo(eventID) {
     var eventCategory;
     var eventTime = {};
 
+	eventArr[eventID] = {};
+	
     console.log("getting event info...")
 
     eventRef.once("value").then(function (snapshot) {
@@ -79,8 +81,10 @@ function getEventInfo(eventID) {
 				imgSrc = "img/logo.png";
 		}
 			
-		
-		$('.table').append('<tr onclick = "window.location.href = \'eventview.html?key='+eventID+'\'"><th scope="row"><img style="width:22px;height:22px;padding:2px 2px 2px 2px;border-radius:2px;background:#00BFFF" src="'+imgSrc+'"><td>'+eventArr[eventID]["event_name"]+'</td><td>'+eventArr[eventID]["event_location"]["Address"]["street_city"]+', '+eventArr[eventID]["event_location"]["Address"]["street_state"]+'</td><td>'+eventArr[eventID]["event_time"]+'</td></tr>');
+		$("#title-wrap p").text(eventArr[eventID]["event_name"]);
+		$("#description-wrap p").text(eventArr[eventID]["event_description"]);
+		$("#location-wrap p").text(eventArr[eventID]["event_location"]["Address"]["street_name"] + ", " + eventArr[eventID]["event_location"]["Address"]["street_city"] + ", " + eventArr[eventID]["event_location"]["Address"]["street_state"] + ", " + eventArr[eventID]["event_location"]["Address"]["street_zipcode"]);
+		$("#time-wrap p").text(timeStr);
 		
     })
 }
@@ -114,13 +118,9 @@ var eventArr = {};
 function findEvents(){
     var ref = firebase.database().ref("master-events");
     ref.once("value").then(function (snapshot) {
-        snapshot.forEach(function (childSnapshot) {
-            //console.log("key: " + childSnapshot.key);
-            var key = childSnapshot.key;
-            getEventInfo(key);
-            eventArr[key] = {};
-        })
-    })
+		var key = window.location.href.substr(window.location.href.indexOf("key=")+4);
+		getEventInfo(key);
+	});
 }
 
 //getEventInfo("-KcBrVinxXeMi8IKCyGQ");
