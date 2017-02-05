@@ -55,7 +55,7 @@
 		8E20C2FB5986752AB35CFD6C /* Pods-AuxiliumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuxiliumTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AuxiliumTests/Pods-AuxiliumTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9CCE26D1D0DCB78060B42346 /* Pods-Auxilium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auxilium.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Auxilium/Pods-Auxilium.debug.xcconfig"; sourceTree = "<group>"; };
 		AF2BE3E91E46F8B200004582 /* left_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_arrow.png; sourceTree = "<group>"; };
-		AF2BE3EB1E47098200004582 /* createEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createEventViewController.swift; sourceTree = "<group>"; };
+		AF2BE3EB1E47098200004582 /* createEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = createEventViewController.swift; path = ../createEventViewController.swift; sourceTree = "<group>"; };
 		AF3376911E467E9500D99027 /* Auxilium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Auxilium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF3376941E467E9500D99027 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF3376991E467E9500D99027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,7 +123,6 @@
 		AF3376881E467E9400D99027 = {
 			isa = PBXGroup;
 			children = (
-				AF2BE3EB1E47098200004582 /* createEventViewController.swift */,
 				AF3376931E467E9500D99027 /* Auxilium */,
 				AF3376A81E467E9500D99027 /* AuxiliumTests */,
 				AF3376B31E467E9500D99027 /* AuxiliumUITests */,
@@ -147,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				AF6EBF8C1E46C6B60031C8F0 /* Auxilium.entitlements */,
+				AF2BE3EB1E47098200004582 /* createEventViewController.swift */,
 				AF3376941E467E9500D99027 /* AppDelegate.swift */,
 				AF3376981E467E9500D99027 /* Main.storyboard */,
 				AFC72D0A1E46DB42003805CC /* EventViewController.swift */,

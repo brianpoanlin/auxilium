@@ -19,12 +19,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        OneSignal.initWithLaunchOptions(launchOptions, appId: "11c7b74d-c1bb-4826-afea-3b49d9f0f581")
+        OneSignal.initWithLaunchOptions(launchOptions, appId: "11c7b74d-c1bb-4826-afea-3b49d9f0f581", handleNotificationReceived: { (notification: OSNotification?) in
+            self.reactToNotification(notification: notification!)
+        }, handleNotificationAction: { (notificationResult: OSNotificationOpenedResult?) in
+            self.reactToNotification(notification: notificationResult!.notification!)
+        },settings: [kOSSettingsKeyInAppAlerts: OSNotificationDisplayType.none.rawValue])
+
         
         FIRApp.configure()
         return true
     }
 
+    func reactToNotification(notification: OSNotification) {
+        print("received push")
+        let eventAdId = notification.payload.additionalData["eventID"] as! String
+        print(eventAdId)
+        if (eventAdId != nil) {
+                print("got eventID for notification")
+
+                let eventVC = self.topMostController().storyboard?.instantiateViewController(withIdentifier: "EventViewController") as! EventViewController
+                eventVC.toPass = eventAdId
+                self.window?.makeKeyAndVisible()
+                self.topMostController().present(eventVC, animated: true, completion: nil)
+
+        }
+    }
+    
+    func topMostController() -> UIViewController {
+        var topController: UIViewController? = UIApplication.shared.keyWindow?.rootViewController
+        while ((topController?.presentedViewController) != nil) {
+            topController = topController?.presentedViewController
+        }
+        return topController!
+    }
+    
+
+
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
