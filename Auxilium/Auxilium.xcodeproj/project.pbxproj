@@ -25,6 +25,7 @@
 		AF6EBF8E1E46C8380031C8F0 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF6EBF8D1E46C8380031C8F0 /* EventTableViewCell.xib */; };
 		AF6EBF901E46D2450031C8F0 /* Food.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EBF8F1E46D2450031C8F0 /* Food.png */; };
 		AF6EBF921E46D3250031C8F0 /* Clean.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EBF911E46D3250031C8F0 /* Clean.png */; };
+		AF81C33A1E476DAF006C36C3 /* Charity.png in Resources */ = {isa = PBXBuildFile; fileRef = AF81C3391E476DAF006C36C3 /* Charity.png */; };
 		AFC72D0B1E46DB42003805CC /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC72D0A1E46DB42003805CC /* EventViewController.swift */; };
 		BC17248645D086D6E8ECC46C /* Pods_Auxilium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF6C9040D9B61D030A1BAB3 /* Pods_Auxilium.framework */; };
 /* End PBXBuildFile section */
@@ -77,6 +78,7 @@
 		AF6EBF8D1E46C8380031C8F0 /* EventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 		AF6EBF8F1E46D2450031C8F0 /* Food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Food.png; sourceTree = "<group>"; };
 		AF6EBF911E46D3250031C8F0 /* Clean.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Clean.png; sourceTree = "<group>"; };
+		AF81C3391E476DAF006C36C3 /* Charity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Charity.png; sourceTree = "<group>"; };
 		AFC72D0A1E46DB42003805CC /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		BB69BA073133B612B8E5C502 /* Pods_AuxiliumUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuxiliumUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC46879FCF70848A15A281F9 /* Pods_AuxiliumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuxiliumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +162,7 @@
 				AF2BE3E91E46F8B200004582 /* left_arrow.png */,
 				AF3376A01E467E9500D99027 /* Info.plist */,
 				AF3376C61E46897900D99027 /* Aux_Blue_Bkg.png */,
+				AF81C3391E476DAF006C36C3 /* Charity.png */,
 				AF3376CA1E4689F400D99027 /* Logo_White.png */,
 				AF3376C21E46849100D99027 /* GoogleService-Info.plist */,
 			);
@@ -333,6 +336,7 @@
 				AF33769A1E467E9500D99027 /* Main.storyboard in Resources */,
 				AF6EBF921E46D3250031C8F0 /* Clean.png in Resources */,
 				AF2BE3EA1E46F8B200004582 /* left_arrow.png in Resources */,
+				AF81C33A1E476DAF006C36C3 /* Charity.png in Resources */,
 				AF6EBF8E1E46C8380031C8F0 /* EventTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
