@@ -18,7 +18,6 @@ class eventTableViewCell: UITableViewCell {
     @IBOutlet weak var eventDescription: UITextView!
     @IBOutlet weak var eventIcon: UIImageView!
     
-    
 }
 
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {

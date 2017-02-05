@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -20,20 +20,20 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fpg-3C-CZb">
-                        <rect key="frame" x="18" y="17" width="89" height="82"/>
+                        <rect key="frame" x="21" y="17" width="80" height="82"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="89" id="5tY-uM-HZB"/>
+                            <constraint firstAttribute="width" constant="80" id="5tY-uM-HZB"/>
                             <constraint firstAttribute="height" constant="82" id="9La-20-xwb"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="hD9-TJ-SRN">
-                        <rect key="frame" x="127" y="22" width="110" height="28"/>
+                        <rect key="frame" x="108" y="23" width="110" height="28"/>
                         <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="21"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="Event Description" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8C-gY-5Yb">
-                        <rect key="frame" x="122" y="53" width="313" height="55.5"/>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Event Description" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8C-gY-5Yb">
+                        <rect key="frame" x="103" y="48" width="313" height="56"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="14"/>
@@ -43,14 +43,14 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="hD9-TJ-SRN" secondAttribute="trailing" constant="5" id="4NX-6B-oYS"/>
-                    <constraint firstItem="hD9-TJ-SRN" firstAttribute="top" secondItem="fpg-3C-CZb" secondAttribute="top" constant="5" id="8An-F9-caD"/>
+                    <constraint firstItem="hD9-TJ-SRN" firstAttribute="top" secondItem="fpg-3C-CZb" secondAttribute="top" constant="6" id="8An-F9-caD"/>
                     <constraint firstItem="H8C-gY-5Yb" firstAttribute="leading" secondItem="hD9-TJ-SRN" secondAttribute="leading" constant="-5" id="DeP-g9-VNC"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="H8C-gY-5Yb" secondAttribute="bottom" id="KnT-6i-9KH"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="H8C-gY-5Yb" secondAttribute="trailing" constant="5" id="YHZ-RN-DrQ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="H8C-gY-5Yb" secondAttribute="bottom" constant="4" id="KnT-6i-9KH"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="H8C-gY-5Yb" secondAttribute="trailing" constant="24" id="YHZ-RN-DrQ"/>
                     <constraint firstItem="fpg-3C-CZb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Z39-s6-ctl"/>
-                    <constraint firstItem="hD9-TJ-SRN" firstAttribute="leading" secondItem="fpg-3C-CZb" secondAttribute="trailing" constant="20" id="qxV-sD-7tq"/>
-                    <constraint firstItem="H8C-gY-5Yb" firstAttribute="top" secondItem="hD9-TJ-SRN" secondAttribute="bottom" constant="3" id="vq9-Xv-M2T"/>
-                    <constraint firstItem="fpg-3C-CZb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="zhh-qO-Adx"/>
+                    <constraint firstItem="hD9-TJ-SRN" firstAttribute="leading" secondItem="fpg-3C-CZb" secondAttribute="trailing" constant="7" id="qxV-sD-7tq"/>
+                    <constraint firstItem="H8C-gY-5Yb" firstAttribute="top" secondItem="hD9-TJ-SRN" secondAttribute="bottom" constant="-3" id="vq9-Xv-M2T"/>
+                    <constraint firstItem="fpg-3C-CZb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="13" id="zhh-qO-Adx"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>

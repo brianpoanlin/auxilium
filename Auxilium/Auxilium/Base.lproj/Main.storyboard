@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -149,7 +149,7 @@
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="161" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LDx-KQ-b0p">
-                                <rect key="frame" x="0.0" y="242.5" width="375" height="424.5"/>
+                                <rect key="frame" x="0.0" y="243" width="375" height="424"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.21034888698630136" colorSpace="calibratedRGB"/>
                                 <sections/>
                                 <connections>
@@ -166,13 +166,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auxilium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4z-nl-HU0">
-                                <rect key="frame" x="82" y="20" width="105" height="39"/>
+                                <rect key="frame" x="82" y="24" width="105" height="39"/>
                                 <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nearby Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWe-wD-JZM">
-                                <rect key="frame" x="16" y="205" width="105.5" height="22.5"/>
+                                <rect key="frame" x="14" y="214" width="105.5" height="22.5"/>
                                 <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -199,14 +199,14 @@
                             <constraint firstItem="XOa-vx-9eV" firstAttribute="leading" secondItem="Ogp-UJ-goz" secondAttribute="leading" id="Al9-yC-O7T"/>
                             <constraint firstItem="Zjl-hL-Fsi" firstAttribute="leading" secondItem="Ogp-UJ-goz" secondAttribute="leadingMargin" id="ItD-9d-Uqy"/>
                             <constraint firstItem="XOa-vx-9eV" firstAttribute="top" secondItem="Zjl-hL-Fsi" secondAttribute="bottom" constant="25" id="No4-ja-CtL"/>
-                            <constraint firstItem="LDx-KQ-b0p" firstAttribute="top" secondItem="XWe-wD-JZM" secondAttribute="bottom" constant="15" id="PiQ-2D-Rub"/>
+                            <constraint firstItem="LDx-KQ-b0p" firstAttribute="top" secondItem="XWe-wD-JZM" secondAttribute="bottom" constant="6.5" id="PiQ-2D-Rub"/>
                             <constraint firstItem="j4z-nl-HU0" firstAttribute="leading" secondItem="Zjl-hL-Fsi" secondAttribute="trailing" constant="15" id="RVh-BB-kKU"/>
-                            <constraint firstItem="XWe-wD-JZM" firstAttribute="leading" secondItem="Ogp-UJ-goz" secondAttribute="leadingMargin" id="TSG-Iw-KGH"/>
+                            <constraint firstItem="XWe-wD-JZM" firstAttribute="leading" secondItem="Ogp-UJ-goz" secondAttribute="leadingMargin" constant="-2" id="TSG-Iw-KGH"/>
                             <constraint firstAttribute="trailing" secondItem="LDx-KQ-b0p" secondAttribute="trailing" id="XLp-Fn-tSU"/>
-                            <constraint firstItem="XWe-wD-JZM" firstAttribute="top" secondItem="XOa-vx-9eV" secondAttribute="bottom" constant="35" id="d2P-fq-wbU"/>
-                            <constraint firstItem="j4z-nl-HU0" firstAttribute="top" secondItem="Ogp-UJ-goz" secondAttribute="topMargin" constant="20" id="dvD-Bn-v3f"/>
+                            <constraint firstItem="XWe-wD-JZM" firstAttribute="top" secondItem="XOa-vx-9eV" secondAttribute="bottom" constant="44" id="d2P-fq-wbU"/>
+                            <constraint firstItem="j4z-nl-HU0" firstAttribute="top" secondItem="Ogp-UJ-goz" secondAttribute="topMargin" constant="24" id="dvD-Bn-v3f"/>
                             <constraint firstItem="XOa-vx-9eV" firstAttribute="leading" secondItem="Ogp-UJ-goz" secondAttribute="leading" id="n5p-gp-cD9"/>
-                            <constraint firstItem="Zjl-hL-Fsi" firstAttribute="top" secondItem="j4z-nl-HU0" secondAttribute="top" id="onO-Dh-SZO"/>
+                            <constraint firstItem="Zjl-hL-Fsi" firstAttribute="top" secondItem="j4z-nl-HU0" secondAttribute="top" constant="-4" id="onO-Dh-SZO"/>
                             <constraint firstItem="h0T-5N-mfL" firstAttribute="top" secondItem="LDx-KQ-b0p" secondAttribute="bottom" id="x2j-o4-LrA"/>
                             <constraint firstAttribute="trailing" secondItem="XOa-vx-9eV" secondAttribute="trailing" id="zoZ-WA-K4K"/>
                         </constraints>
@@ -382,7 +382,6 @@
                                         </state>
                                         <connections>
                                             <action selector="createEvent:" destination="Q2Q-4a-URP" eventType="touchUpInside" id="9UE-j6-aez"/>
-                                            <segue destination="0sB-wY-r3W" kind="presentation" modalTransitionStyle="coverVertical" id="TF5-bL-eMS"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="State" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SwI-iy-l8w">
@@ -464,7 +463,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="717.60000000000002" y="-857.27136431784118"/>
+            <point key="canvasLocation" x="783" y="-779"/>
         </scene>
         <!--Event View Controller-->
         <scene sceneID="O5Z-my-WxF">
@@ -499,7 +498,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gk1-6r-71P">
-                                <rect key="frame" x="26" y="302.5" width="322" height="354.5"/>
+                                <rect key="frame" x="26" y="303" width="322" height="327"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="DFJ-6a-tDy" appends="YES" id="UTg-gE-Mtf"/>
@@ -534,7 +533,7 @@
                             <constraint firstItem="tT0-xd-8uG" firstAttribute="top" secondItem="tdd-2x-c4J" secondAttribute="bottom" constant="20" id="KBg-od-Md7"/>
                             <constraint firstItem="GT5-Nj-5Zl" firstAttribute="trailing" secondItem="mgN-3D-ePK" secondAttribute="trailingMargin" constant="5" id="QGX-zg-Pqp"/>
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="tT0-xd-8uG" secondAttribute="trailing" constant="10" id="cZ2-18-6Cz"/>
-                            <constraint firstItem="pFW-qA-5bS" firstAttribute="top" secondItem="gk1-6r-71P" secondAttribute="bottom" constant="10" id="eYz-iw-7vp"/>
+                            <constraint firstItem="pFW-qA-5bS" firstAttribute="top" secondItem="gk1-6r-71P" secondAttribute="bottom" constant="37" id="eYz-iw-7vp"/>
                             <constraint firstItem="tdd-2x-c4J" firstAttribute="top" secondItem="8H8-5U-RvH" secondAttribute="bottom" constant="25" id="enT-fw-Mao"/>
                             <constraint firstItem="HKK-tp-XiC" firstAttribute="leading" secondItem="mgN-3D-ePK" secondAttribute="leadingMargin" id="g0O-gu-LKu"/>
                             <constraint firstItem="tT0-xd-8uG" firstAttribute="centerX" secondItem="mgN-3D-ePK" secondAttribute="centerX" id="k5W-20-bmG"/>
@@ -566,7 +565,6 @@
         <image name="left_arrow.png" width="1200" height="1200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="RN7-py-9MH"/>
-        <segue reference="TF5-bL-eMS"/>
+        <segue reference="YWd-7i-8Xp"/>
     </inferredMetricsTieBreakers>
 </document>
