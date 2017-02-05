@@ -130,7 +130,7 @@ class createEventViewController: UIViewController {
     
     func makeRequest(eventID: String){
         print("yOOOO")
-        let url = "http://localhost:3000/"
+        let url = "http://joseph-liu.com:3000/"
         
         Alamofire.request(url + "send/" + eventID).responseJSON { response in
             if let data = response.data, let dataString = String(data: data, encoding: .utf8) {
